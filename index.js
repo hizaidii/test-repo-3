@@ -130,4 +130,17 @@ const j = 0;
 console.log(boolean(g)); //this will be TRUE
 console.log(boolean(h)); // FALSE
 console.log(boolean(i)); // TRUE
-console.log(boolean(j)); // FALSE
+console.log(boolean(j)); // FALSE 
+
+// Readline-Sync (install the package thru terminal using: npm install readline-sync )
+
+const readlineSync = require("readline-sync");
+
+const userName = readlineSync.question("May I know your name?");
+const age = readlineSync.question("May I know your age");
+
+const userBirthYear = 2023 - age;
+
+console.log(`Hey ${userName}! You were born in ${userBirthYear}`);
+
+// to run the function, type in terminal: node read-user-data
