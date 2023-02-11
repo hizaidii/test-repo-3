@@ -144,3 +144,66 @@ const userBirthYear = 2023 - age;
 console.log(`Hey ${userName}! You were born in ${userBirthYear}`);
 
 // to run the function, type in terminal: node read-user-data
+
+// COMPARISON OPERATORS
+
+console.log(30 > 50);
+console.log(40 <= 40);
+console.log(40 == 40)
+
+console.log("Samar" > "Husain"); //in STRINGS the first characters are matched in ASCII, if equal then next one is tested
+
+console.log("01" == 1); //True because it's strings are turned into numbers
+console.log("01" === 1); //false because === forces STRICT equality, 01 is read as string only
+
+console.log(null == undefined); //true 
+console.log(null === undefined); //false
+
+console.log(null > 0) // False, because when compared with numbers the null is read as 0
+console.log(null < 1) // True
+
+console.log(null == 0) //False because here null is read as null
+
+/**
+ * 3 <= 5 : True
+ * "mango" > "banana" : true
+ * "2" > "3" : false
+ * undefined == null : true
+ * null === undefined : false
+ * Null < 1 : true
+ */
+
+// CONDITIONAL STATEMENTS
+
+const loginStatus = true;
+
+if (loginStatus) {
+    console.log("Welcome to the platform")
+}
+else {
+    console.log("Access denied")
+}
+
+// Use operations
+
+const userAge = 12;
+
+if (userAge >= 18) {
+    console.log("You may enter")
+}
+else {
+    console.log("Access denied")
+}
+
+// Using readlineSync
+
+const readlineSync = require("readline-sync")
+const userAge = readlineSync.question("How old are you?")
+if (userAge > 16){
+    console.log ("Hey you are an adult");
+} 
+else {
+    console.log ("You are NOT an adult")
+}
+
+
